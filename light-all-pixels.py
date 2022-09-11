@@ -6,7 +6,6 @@ import argparse
 # Colors
 WHITE = (255, 255, 255)
 OFF = (0, 0, 0)
-BRIGHTNESS = 1.0
 
 
 def main():
@@ -19,10 +18,16 @@ def main():
                         dest="max_pixels",
                         help="The maximum number of pixels in the strip")
 
+    parser.add_argument("--brightness",
+                        type=float,
+                        action="store",
+                        required=True,
+                        dest="brightness",
+                        help="The brightness of the strip")
 
     args = parser.parse_args()
 
-    pixels = neopixel.NeoPixel(board.D18, args.max_pixels, brightness=BRIGHTNESS)
+    pixels = neopixel.NeoPixel(board.D18, args.max_pixels, brightness=args.brightness)
 
     GPIO.setwarnings(False)
 
