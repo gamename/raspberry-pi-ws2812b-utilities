@@ -1,3 +1,10 @@
+"""
+When I cut a LED strip, I don't often know exactly how many pixels it has.  This utility was written
+to help with that predicament. Basically, its guessing script.  You set the estimated length of your
+strip and then try to light ONE pixel to verify it.  Rinse, repeat until you have the correct values.
+
+There are probably better ways to do this, but it works for me.
+"""
 import board
 import neopixel
 import RPi.GPIO as GPIO
