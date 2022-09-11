@@ -4,6 +4,11 @@ to help with that predicament. Basically, its guessing script.  You set the esti
 strip and then try to light ONE pixel to verify it.  Rinse, repeat until you have the correct values.
 
 There are probably better ways to do this, but it works for me.
+
+NOTE: You have to run this with sudo.
+
+Example:
+    sudo python3 ./measure-strip.py --max_pixels 110 --test_pixel 103
 """
 import board
 import neopixel
