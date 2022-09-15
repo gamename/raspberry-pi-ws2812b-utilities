@@ -48,7 +48,7 @@ def restricted_int(x):
 def main():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--num_pixels",
+    parser.add_argument("--num-pixels",
                         type=int,
                         action="store",
                         required=True,
