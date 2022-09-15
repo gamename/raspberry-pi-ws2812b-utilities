@@ -67,7 +67,7 @@ def main():
                         type=restricted_int,
                         action="store",
                         required=False,
-                        default=0,
+                        default=255,
                         dest="red",
                         help="Set red pixel value")
 
@@ -75,7 +75,7 @@ def main():
                         type=restricted_int,
                         action="store",
                         required=False,
-                        default=0,
+                        default=255,
                         dest="green",
                         help="Set green pixel value")
 
@@ -83,7 +83,7 @@ def main():
                         type=restricted_int,
                         action="store",
                         required=False,
-                        default=0,
+                        default=255,
                         dest="blue",
                         help="Set blue pixel value")
 
