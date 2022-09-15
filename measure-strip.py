@@ -41,7 +41,7 @@ def main():
                         type=restricted_int,
                         action="store",
                         required=False,
-                        Default=100,
+                        default=100,
                         dest="max_pixels",
                         help="The maximum number of pixels in the strip")
 
