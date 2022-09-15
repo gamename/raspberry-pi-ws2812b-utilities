@@ -40,7 +40,8 @@ def main():
     parser.add_argument("--max-pixels",
                         type=restricted_int,
                         action="store",
-                        required=True,
+                        required=False,
+                        Default=100,
                         dest="max_pixels",
                         help="The maximum number of pixels in the strip")
 
