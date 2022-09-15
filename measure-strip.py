@@ -24,14 +24,14 @@ BRIGHTNESS = 1.0
 def main():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument("--max_pixels",
+    parser.add_argument("--max-pixels",
                         type=int,
                         action="store",
                         required=True,
                         dest="max_pixels",
                         help="The maximum number of pixels in the strip")
 
-    parser.add_argument("--test_pixel",
+    parser.add_argument("--test-pixel",
                         type=int,
                         action="store",
                         required=True,
