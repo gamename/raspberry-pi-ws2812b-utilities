@@ -51,7 +51,8 @@ def main():
     parser.add_argument("--num-pixels",
                         type=int,
                         action="store",
-                        required=True,
+                        required=False,
+                        default=100,
                         dest="num_pixels",
                         help="The number of pixels in the strip")
 
